@@ -1,5 +1,6 @@
 package base;
 
+import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Before;
@@ -16,7 +17,7 @@ public class BaseTest {
     public static WebDriver driver;
     public WebDriverWait wait;
     public Actions action;
-    private org.apache.log4j.Logger LOGGER = Logger.getLogger(BaseTest.class);
+    private Logger LOGGER = LogManager.getLogger(BaseTest.class);
 
     @Before
     public void beginTest() {
